@@ -1,0 +1,15 @@
+[submodule "PhotinoX.Native"]
+	path = PhotinoX.Native
+	url = https://github.com/ivanvoyager/PhotinoX.Native.git
+[submodule "PhotinoX"]
+	path = PhotinoX
+	url = https://github.com/ivanvoyager/PhotinoX.git
+[submodule "PhotinoX.Server"]
+	path = PhotinoX.Server
+	url = https://github.com/ivanvoyager/PhotinoX.Server.git
+[submodule "PhotinoX.Blazor"]
+	path = PhotinoX.Blazor
+	url = https://github.com/ivanvoyager/PhotinoX.Blazor.git
+[submodule "PhotinoX.Samples"]
+	path = PhotinoX.Samples
+	url = https://github.com/ivanvoyager/PhotinoX.Samples.git

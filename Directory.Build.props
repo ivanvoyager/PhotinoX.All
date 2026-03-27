@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <PhotinoX_UseLocalProjects>true</PhotinoX_UseLocalProjects>
+  </PropertyGroup>
+</Project>

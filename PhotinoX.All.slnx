@@ -1,0 +1,76 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Blazor/">
+    <File Path="PhotinoX.Blazor/Directory.Build.props" />
+    <Project Path="PhotinoX.Blazor/Photino.Blazor/PhotinoX.Blazor.csproj">
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+  </Folder>
+  <Folder Name="/Blazor/Samples/">
+    <Project Path="PhotinoX.Blazor/Samples/HelloWorld/HelloWorld.csproj" />
+    <Project Path="PhotinoX.Blazor/Samples/Photino.Blazor.EmbeddedMudBlazorSample/Photino.Blazor.EmbeddedMudBlazorSample/Photino.Blazor.EmbeddedMudBlazorSample.csproj" />
+    <Project Path="PhotinoX.Blazor/Samples/Photino.Blazor.MultiWindowSample/Photino.Blazor.MultiWindowSample.csproj" />
+    <Project Path="PhotinoX.Blazor/Samples/Photino.Blazor.NativeAOT/Photino.Blazor.NativeAOT.csproj" />
+    <Project Path="PhotinoX.Blazor/Samples/Photino.Blazor.Sample/Photino.Blazor.Sample.csproj" />
+  </Folder>
+  <Folder Name="/Native/">
+    <Project Path="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" Id="b326b50a-f623-40f1-92f7-1ec6a5a48dac" />
+    <Project Path="PhotinoX.Native/Photino.Test/Photino.Test.csproj">
+      <BuildDependency Project="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+    </Project>
+  </Folder>
+  <Folder Name="/Samples/">
+    <File Path="PhotinoX.Samples/Directory.Build.props" />
+    <File Path="PhotinoX.Samples/README.md" />
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.3d.React/HelloPhotino.3d.React.csproj">
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.3d/HelloPhotino.3d.csproj">
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.Angular/HelloPhotino.Angular.csproj">
+      <BuildDependency Project="PhotinoX.Server/Photino.NET.Server/PhotinoX.Server.csproj" />
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.GRpc/HelloPhotino.GRpc.csproj">
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.MultiWindow/HelloPhotino.MultiWindow.csproj">
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.NET/HelloPhotinoX.csproj">
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.React/HelloPhotino.React.csproj">
+      <BuildDependency Project="PhotinoX.Server/Photino.NET.Server/PhotinoX.Server.csproj" />
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.StaticFileServer/HelloPhotino.StaticFileServer.csproj">
+      <BuildDependency Project="PhotinoX.Server/Photino.NET.Server/PhotinoX.Server.csproj" />
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.TestBench/HelloPhotino.TestBench.csproj">
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.Vue/HelloPhotino.Vue.csproj">
+      <BuildDependency Project="PhotinoX.Server/Photino.NET.Server/PhotinoX.Server.csproj" />
+      <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
+    </Project>
+  </Folder>
+  <Folder Name="/Server/">
+    <Project Path="PhotinoX.Server/Photino.NET.Server/PhotinoX.Server.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+  </Folder>
+  <Project Path="PhotinoX/Photino.NET/PhotinoX.csproj">
+    <BuildDependency Project="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" />
+  </Project>
+</Solution>
