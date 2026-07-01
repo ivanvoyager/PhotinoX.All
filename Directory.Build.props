@@ -1,5 +1,5 @@
 <Project>
   <PropertyGroup>
-    <PhotinoX_UseLocalProjects>true</PhotinoX_UseLocalProjects>
+    <PhotinoX_UseLocalProjects>false</PhotinoX_UseLocalProjects>
   </PropertyGroup>
 </Project>

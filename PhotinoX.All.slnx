@@ -26,6 +26,12 @@
       <Platform Solution="*|x64" Project="x64" />
     </Project>
   </Folder>
+  <Folder Name="/PhotinoX/">
+    <File Path="PhotinoX/Directory.Build.props" />
+    <Project Path="PhotinoX/Photino.NET/PhotinoX.csproj">
+      <BuildDependency Project="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" />
+    </Project>
+  </Folder>
   <Folder Name="/Samples/">
     <File Path="PhotinoX.Samples/Directory.Build.props" />
     <File Path="PhotinoX.Samples/README.md" />
@@ -65,12 +71,11 @@
     </Project>
   </Folder>
   <Folder Name="/Server/">
+    <File Path="PhotinoX.Server/Directory.Build.props" />
     <Project Path="PhotinoX.Server/Photino.NET.Server/PhotinoX.Server.csproj" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path="Directory.Build.props" />
+    <File Path="README.md" />
   </Folder>
-  <Project Path="PhotinoX/Photino.NET/PhotinoX.csproj">
-    <BuildDependency Project="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" />
-  </Project>
 </Solution>
