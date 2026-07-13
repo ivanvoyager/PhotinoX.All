@@ -19,6 +19,7 @@
     <Project Path="PhotinoX.Blazor/Samples/Photino.Blazor.Sample/Photino.Blazor.Sample.csproj" />
   </Folder>
   <Folder Name="/Native/">
+    <File Path="PhotinoX.Native/README.md" />
     <Project Path="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" Id="b326b50a-f623-40f1-92f7-1ec6a5a48dac" />
     <Project Path="PhotinoX.Native/Photino.Test/Photino.Test.csproj">
       <BuildDependency Project="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" />
