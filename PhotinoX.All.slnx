@@ -46,6 +46,7 @@
       <BuildDependency Project="PhotinoX.Server/Photino.NET.Server/PhotinoX.Server.csproj" />
       <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
     </Project>
+    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.CustomSchemes/HelloPhotino.CustomSchemes.csproj" />
     <Project Path="PhotinoX.Samples/Photino.HelloPhotino.GRpc/HelloPhotino.GRpc.csproj">
       <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
     </Project>
