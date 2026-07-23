@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+cd "$(dirname "$0")/.."
+
 echo "Initializing submodules..."
 
 git submodule update --init --recursive

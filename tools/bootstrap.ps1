@@ -1,5 +1,7 @@
 $ErrorActionPreference = "Stop"
 
+Set-Location "$PSScriptRoot/.."
+
 Write-Host "Initializing submodules..." -ForegroundColor Cyan
 
 git submodule update --init --recursive
