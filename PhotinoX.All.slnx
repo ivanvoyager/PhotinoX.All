@@ -5,6 +5,9 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Folder Name="/App/">
+    <Project Path="PhotinoX.App/src/PhotinoX.App/PhotinoX.App.csproj" />
+  </Folder>
   <Folder Name="/Blazor/">
     <File Path="PhotinoX.Blazor/Directory.Build.props" />
     <Project Path="PhotinoX.Blazor/Photino.Blazor/PhotinoX.Blazor.csproj">
@@ -32,6 +35,9 @@
     <Project Path="PhotinoX/Photino.NET/PhotinoX.csproj">
       <BuildDependency Project="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" />
     </Project>
+  </Folder>
+  <Folder Name="/PhotinoX/Samples/">
+    <Project Path="PhotinoX/Samples/WindowDiagnostics/WindowDiagnostics.csproj" Id="f2a27ed3-fe8c-449c-9867-962248f992ce" />
   </Folder>
   <Folder Name="/Samples/">
     <File Path="PhotinoX.Samples/Directory.Build.props" />

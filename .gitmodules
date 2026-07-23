@@ -13,3 +13,6 @@
 [submodule "PhotinoX.Samples"]
 	path = PhotinoX.Samples
 	url = https://github.com/ivanvoyager/PhotinoX.Samples.git
+[submodule "PhotinoX.App"]
+	path = PhotinoX.App
+	url = https://github.com/ivanvoyager/PhotinoX.App.git
