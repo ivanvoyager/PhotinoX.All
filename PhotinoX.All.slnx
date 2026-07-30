@@ -37,6 +37,7 @@
     </Project>
   </Folder>
   <Folder Name="/PhotinoX/Samples/">
+    <Project Path="PhotinoX/Samples/ChromelessDragResizeDemo/ChromelessDragResizeDemo.csproj" Id="8b418dc3-79ca-4f45-af6f-1f91225211c1" />
     <Project Path="PhotinoX/Samples/WindowDiagnostics/WindowDiagnostics.csproj" Id="f2a27ed3-fe8c-449c-9867-962248f992ce" />
   </Folder>
   <Folder Name="/Samples/">
