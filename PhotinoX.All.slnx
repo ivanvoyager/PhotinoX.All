@@ -8,6 +8,10 @@
   <Folder Name="/App/">
     <Project Path="PhotinoX.App/src/PhotinoX.App/PhotinoX.App.csproj" />
   </Folder>
+  <Folder Name="/App/Samples/">
+    <Project Path="PhotinoX.App/Samples/PhotinoX.App.Dashboard/PhotinoX.App.Dashboard.csproj" />
+    <Project Path="PhotinoX.App/Samples/PhotinoX.App.Dashboard/PhotinoX.App.Dashboard.Fluent.csproj" />
+  </Folder>
   <Folder Name="/Blazor/">
     <File Path="PhotinoX.Blazor/Directory.Build.props" />
     <Project Path="PhotinoX.Blazor/Photino.Blazor/PhotinoX.Blazor.csproj">
@@ -20,7 +24,7 @@
     <Project Path="PhotinoX.Blazor/Samples/Photino.Blazor.MultiWindowSample/Photino.Blazor.MultiWindowSample.csproj" />
     <Project Path="PhotinoX.Blazor/Samples/Photino.Blazor.NativeAOT/Photino.Blazor.NativeAOT.csproj" />
     <Project Path="PhotinoX.Blazor/Samples/Photino.Blazor.Sample/Photino.Blazor.Sample.csproj" />
-    <Project Path="PhotinoX.Blazor/Samples/UrlLoadingDemo/UrlLoadingDemo.csproj" Id="a2242aa7-c067-4ee4-8a1d-b6af4ef1b37c" />
+    <Project Path="PhotinoX.Blazor/Samples/UrlLoadingDemo/UrlLoadingDemo.csproj" />
   </Folder>
   <Folder Name="/Native/">
     <File Path="PhotinoX.Native/README.md" />
@@ -38,9 +42,10 @@
     </Project>
   </Folder>
   <Folder Name="/PhotinoX/Samples/">
-    <Project Path="PhotinoX/Samples/ChromelessDragResizeDemo/ChromelessDragResizeDemo.csproj" Id="8b418dc3-79ca-4f45-af6f-1f91225211c1" />
-    <Project Path="PhotinoX/Samples/NavigationPolicyDemo/NavigationPolicyDemo.csproj" Id="b7695967-5eaf-4799-8b1b-791674838a89" />
-    <Project Path="PhotinoX/Samples/WindowDiagnostics/WindowDiagnostics.csproj" Id="f2a27ed3-fe8c-449c-9867-962248f992ce" />
+    <Project Path="PhotinoX/Samples/ChromelessDragResizeDemo/ChromelessDragResizeDemo.csproj" />
+    <Project Path="PhotinoX/Samples/NavigationPolicyDemo/NavigationPolicyDemo.csproj" />
+    <Project Path="PhotinoX/Samples/NotificationDiagnostics/NotificationDiagnostics.csproj" Id="248a6856-0f9e-4b15-8b3f-83e4f2cedd9a" />
+    <Project Path="PhotinoX/Samples/WindowDiagnostics/WindowDiagnostics.csproj" />
   </Folder>
   <Folder Name="/Samples/">
     <File Path="PhotinoX.Samples/Directory.Build.props" />
