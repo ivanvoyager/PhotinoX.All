@@ -43,6 +43,7 @@
   </Folder>
   <Folder Name="/PhotinoX/Samples/">
     <Project Path="PhotinoX/Samples/ChromelessDragResizeDemo/ChromelessDragResizeDemo.csproj" />
+    <Project Path="PhotinoX/Samples/CustomSchemes/CustomSchemes.csproj" />
     <Project Path="PhotinoX/Samples/NavigationPolicyDemo/NavigationPolicyDemo.csproj" />
     <Project Path="PhotinoX/Samples/NotificationDiagnostics/NotificationDiagnostics.csproj" Id="248a6856-0f9e-4b15-8b3f-83e4f2cedd9a" />
     <Project Path="PhotinoX/Samples/WindowDiagnostics/WindowDiagnostics.csproj" />
@@ -60,7 +61,6 @@
       <BuildDependency Project="PhotinoX.Server/Photino.NET.Server/PhotinoX.Server.csproj" />
       <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
     </Project>
-    <Project Path="PhotinoX.Samples/Photino.HelloPhotino.CustomSchemes/HelloPhotino.CustomSchemes.csproj" />
     <Project Path="PhotinoX.Samples/Photino.HelloPhotino.GRpc/HelloPhotino.GRpc.csproj">
       <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
     </Project>
