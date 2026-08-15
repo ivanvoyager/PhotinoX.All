@@ -3,10 +3,18 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-string[] extensions = args.Length > 1 ? args[1].Split(';') : [".csproj", ".vcxproj", ".props", ".targets", ".cs", ".h", ".cpp", ".mm", ".css", ".js", ".json", ".html", ".md"];
+var singleOutput = args.Any(arg => string.Equals(arg, "--single", StringComparison.OrdinalIgnoreCase));
+
+var positionalArgs = args.Where(arg => !arg.StartsWith("--", StringComparison.Ordinal)).ToArray();
+
+string[] extensions = positionalArgs.Length > 1 && !string.IsNullOrWhiteSpace(positionalArgs[1])
+    ? positionalArgs[1].Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+    : [".csproj", ".vcxproj", ".props", ".targets", ".cs", ".h", ".cpp", ".mm", ".css", ".js", ".json", ".html", ".md"];
+
 string[] exclude = [".g.", "\\bin\\", "\\obj\\", "\\bin-", "\\obj-", "\\Dependencies"];
 
-var currentDir = args.Length > 0 ? Path.GetFullPath(args[0]) : AppContext.BaseDirectory;
+var currentDir = positionalArgs.Length > 0 ? Path.GetFullPath(positionalArgs[0]) : AppContext.BaseDirectory;
+
 if (!Directory.Exists(currentDir))
 {
     Console.WriteLine($"Directory does not exist: {currentDir}");
@@ -37,10 +45,12 @@ var sortedFiles = files.OrderBy(f => extensionOrder[Path.GetExtension(f)]).ThenB
 var fileNames = string.Join(Environment.NewLine, sortedFiles.Select(f => f.Substring(currentDir.Length)));
 Console.WriteLine($"Files[{sortedFiles.Count}]: {fileNames}");
 
-var outputChunks = GetOutputChunks(sortedFiles)
-    .OrderBy(pair => pair.Key.Length == 0 ? 1 : 0)
-    .ThenBy(pair => pair.Key, StringComparer.Ordinal)
-    .ToList();
+var outputChunks = singleOutput
+    ? new Dictionary<string, List<string>>(StringComparer.Ordinal) { [""] = sortedFiles }
+    : GetOutputChunks(sortedFiles)
+        .OrderBy(pair => pair.Key.Length == 0 ? 1 : 0)
+        .ThenBy(pair => pair.Key, StringComparer.Ordinal)
+        .ToDictionary(pair => pair.Key, pair => pair.Value, StringComparer.Ordinal);
 
 int index=0;
 foreach (var pair in outputChunks)
