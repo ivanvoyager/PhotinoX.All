@@ -6,6 +6,7 @@
     <Platform Name="x86" />
   </Configurations>
   <Folder Name="/App/">
+    <Project Path="PhotinoX.App/tests/PhotinoX.App.Tests.csproj" />
     <Project Path="PhotinoX.App/src/PhotinoX.App/PhotinoX.App.csproj" />
   </Folder>
   <Folder Name="/App/Samples/">
@@ -17,6 +18,7 @@
     <Project Path="PhotinoX.Blazor/Photino.Blazor/PhotinoX.Blazor.csproj">
       <BuildDependency Project="PhotinoX/Photino.NET/PhotinoX.csproj" />
     </Project>
+    <Project Path="PhotinoX.Blazor/tests/PhotinoX.Blazor.Tests.csproj" />
   </Folder>
   <Folder Name="/Blazor/Samples/">
     <Project Path="PhotinoX.Blazor/Samples/HelloWorld/HelloWorld.csproj" />
