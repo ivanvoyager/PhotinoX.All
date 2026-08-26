@@ -16,3 +16,6 @@
 [submodule "PhotinoX.App"]
 	path = PhotinoX.App
 	url = https://github.com/ivanvoyager/PhotinoX.App.git
+[submodule "PhotinoX.Cpp"]
+	path = PhotinoX.Cpp
+	url = https://github.com/ivanvoyager/PhotinoX.Cpp.git
