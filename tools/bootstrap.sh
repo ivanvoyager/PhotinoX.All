@@ -29,5 +29,6 @@ checkout_submodule "PhotinoX.Blazor" "master"
 checkout_submodule "PhotinoX.Server" "master"
 checkout_submodule "PhotinoX.Samples" "master"
 checkout_submodule "PhotinoX.App" "main"
+checkout_submodule "PhotinoX.Cpp" "main"
 
 echo "Done."

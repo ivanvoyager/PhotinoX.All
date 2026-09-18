@@ -32,5 +32,6 @@ Update-Submodule "PhotinoX.Blazor" "master"
 Update-Submodule "PhotinoX.Server" "master"
 Update-Submodule "PhotinoX.Samples" "master"
 Update-Submodule "PhotinoX.App" "main"
+Update-Submodule "PhotinoX.Cpp" "main"
 
 Write-Host "Done." -ForegroundColor Green

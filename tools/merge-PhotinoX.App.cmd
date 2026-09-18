@@ -1,3 +1,3 @@
 @echo off
-dotnet run merge.cs "..\PhotinoX.App\src\PhotinoX.App"
+dotnet run merge.cs "..\PhotinoX.App\src\PhotinoX.App" ".cs" --single
 pause

@@ -11,7 +11,7 @@ string[] extensions = positionalArgs.Length > 1 && !string.IsNullOrWhiteSpace(po
     ? positionalArgs[1].Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
     : [".csproj", ".vcxproj", ".props", ".targets", ".cs", ".h", ".cpp", ".mm", ".css", ".js", ".json", ".html", ".md"];
 
-string[] exclude = [".g.", "\\bin\\", "\\obj\\", "\\bin-", "\\obj-", "\\Dependencies"];
+string[] exclude = [".g.", "\\.vs\\", "\\bin\\", "\\obj\\", "\\bin-", "\\obj-", "\\Dependencies", "\\build\\"];
 
 var currentDir = positionalArgs.Length > 0 ? Path.GetFullPath(positionalArgs[0]) : AppContext.BaseDirectory;
 
