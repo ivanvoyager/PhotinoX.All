@@ -46,9 +46,11 @@
   <Folder Name="/PhotinoX/Samples/">
     <Project Path="PhotinoX/Samples/ChromelessDragResizeDemo/ChromelessDragResizeDemo.csproj" />
     <Project Path="PhotinoX/Samples/CustomSchemes/CustomSchemes.csproj" />
+    <Project Path="PhotinoX/Samples/HelloWorld/HelloWorld.csproj" />
     <Project Path="PhotinoX/Samples/NavigationPolicyDemo/NavigationPolicyDemo.csproj" />
     <Project Path="PhotinoX/Samples/NotificationDiagnostics/NotificationDiagnostics.csproj" />
     <Project Path="PhotinoX/Samples/RuntimeDiagnostics/RuntimeDiagnostics.csproj" />
+    <Project Path="PhotinoX/Samples/SplashScreen/SplashScreen.csproj" />
     <Project Path="PhotinoX/Samples/WindowDiagnostics/WindowDiagnostics.csproj" />
   </Folder>
   <Folder Name="/Samples/">
