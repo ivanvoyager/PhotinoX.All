@@ -51,6 +51,7 @@
     <Project Path="PhotinoX/Samples/NotificationDiagnostics/NotificationDiagnostics.csproj" />
     <Project Path="PhotinoX/Samples/RuntimeDiagnostics/RuntimeDiagnostics.csproj" />
     <Project Path="PhotinoX/Samples/SplashScreen/SplashScreen.csproj" />
+    <Project Path="PhotinoX/Samples/TransparencyDemo/TransparencyDemo.csproj" />
     <Project Path="PhotinoX/Samples/WindowDiagnostics/WindowDiagnostics.csproj" />
   </Folder>
   <Folder Name="/Samples/">
