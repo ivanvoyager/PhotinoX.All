@@ -1,0 +1,38 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Native/">
+    <File Path="PhotinoX.Native/README.md" />
+    <Project Path="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" Id="b326b50a-f623-40f1-92f7-1ec6a5a48dac" />
+    <Project Path="PhotinoX.Native/Photino.Test/Photino.Test.csproj">
+      <BuildDependency Project="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+    </Project>
+  </Folder>
+  <Folder Name="/PhotinoX/">
+    <File Path="PhotinoX/Directory.Build.props" />
+    <Project Path="PhotinoX/Photino.NET/PhotinoX.csproj">
+      <BuildDependency Project="PhotinoX.Native/Photino.Native/Photino.Native.vcxproj" />
+    </Project>
+  </Folder>
+  <Folder Name="/PhotinoX/Samples/">
+    <Project Path="PhotinoX/Samples/ChromelessDragResizeDemo/ChromelessDragResizeDemo.csproj" />
+    <Project Path="PhotinoX/Samples/CustomSchemes/CustomSchemes.csproj" />
+    <Project Path="PhotinoX/Samples/HelloWorld/HelloWorld.csproj" Id="abe20858-aa1f-49f8-956d-cbe907cfc52b" />
+    <Project Path="PhotinoX/Samples/NavigationPolicyDemo/NavigationPolicyDemo.csproj" />
+    <Project Path="PhotinoX/Samples/NotificationDiagnostics/NotificationDiagnostics.csproj" />
+    <Project Path="PhotinoX/Samples/RuntimeDiagnostics/RuntimeDiagnostics.csproj" />
+    <Project Path="PhotinoX/Samples/SplashScreen/SplashScreen.csproj" />
+    <Project Path="PhotinoX/Samples/TransparencyDemo/TransparencyDemo.csproj" />
+    <Project Path="PhotinoX/Samples/WindowDiagnostics/WindowDiagnostics.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="README.md" />
+  </Folder>
+</Solution>
