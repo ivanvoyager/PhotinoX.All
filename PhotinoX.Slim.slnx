@@ -23,6 +23,7 @@
   <Folder Name="/PhotinoX/Samples/">
     <Project Path="PhotinoX/Samples/ChromelessDragResizeDemo/ChromelessDragResizeDemo.csproj" />
     <Project Path="PhotinoX/Samples/CustomSchemes/CustomSchemes.csproj" />
+    <Project Path="PhotinoX/Samples/DialogsDemo/DialogsDemo.csproj" />
     <Project Path="PhotinoX/Samples/HelloWorld/HelloWorld.csproj" Id="abe20858-aa1f-49f8-956d-cbe907cfc52b" />
     <Project Path="PhotinoX/Samples/NavigationPolicyDemo/NavigationPolicyDemo.csproj" />
     <Project Path="PhotinoX/Samples/NotificationDiagnostics/NotificationDiagnostics.csproj" />
