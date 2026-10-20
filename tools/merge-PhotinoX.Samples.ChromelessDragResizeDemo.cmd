@@ -1,3 +1,5 @@
 @echo off
-dotnet run merge.cs "..\PhotinoX\Samples\ChromelessDragResizeDemo" "" --single
+pushd "%~dp0"
+dotnet nuext-merge "..\PhotinoX\Samples\ChromelessDragResizeDemo" --single
+popd
 pause

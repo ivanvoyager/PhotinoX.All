@@ -1,3 +1,5 @@
 @echo off
-dotnet run merge.cs "..\PhotinoX.App\src\PhotinoX.App" ".cs" --single
+pushd "%~dp0"
+dotnet nuext-merge "..\PhotinoX.App\src\PhotinoX.App" ".cs" --single
+popd
 pause

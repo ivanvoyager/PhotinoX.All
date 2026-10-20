@@ -1,3 +1,5 @@
 @echo off
-dotnet run merge.cs "..\PhotinoX\Samples\SplashScreen" "" --single
+pushd "%~dp0"
+dotnet nuext-merge "..\PhotinoX\Samples\SplashScreen" --single
+popd
 pause
